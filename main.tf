@@ -1,7 +1,7 @@
 variable "token" {
 }
 
-variable "organization_name " {
+variable "organization_name" {
 }
 
 variable "email" {
