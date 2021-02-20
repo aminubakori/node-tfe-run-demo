@@ -9,7 +9,6 @@ variable "organization_name" {
 
 provider "tfe" {
   token    = var.token
-  version  = "~> 0.15.0"
 }
 
 data "tfe_workspace" "default" {
