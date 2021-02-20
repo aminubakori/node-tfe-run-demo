@@ -1,13 +1,10 @@
 variable "token" {
-  type = "string"
 }
 
 variable "workspace_name" {
-  type = "string"
 }
 
 variable "organization_name" {
-  type = "string"
 }
 
 provider "tfe" {
