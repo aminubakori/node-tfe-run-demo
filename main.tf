@@ -1,17 +1,17 @@
 variable "token" {
 }
 
-variable "workspace_name" {
+variable "organization_name " {
 }
 
-variable "organization_name" {
+variable "email" {
 }
 
 provider "tfe" {
   token    = var.token
 }
 
-data "tfe_workspace" "default" {
-  name         = var.workspace_name
-  organization = var.organization_name
+resource "tfe_organization" "test" {
+  name  = var.organization_name 
+  email = var.email
 }
